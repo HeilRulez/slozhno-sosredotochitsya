@@ -1,5 +1,28 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
+.text-font-setup {
+  color: rgb(255, 0, 112);
+  font-family: var(--main-font);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+.header__logo {
+  inline-size: 50px;
+  block-size: 20px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 25px;
+}
+
+.header__logo::after {
+  content: "REC";
+}
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+  background-color: var(--bg-color);
 }
