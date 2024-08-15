@@ -1,7 +1,7 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .text-font-setup {
-  color: rgb(255, 0, 112);
+  color: var(--accent-color);
   font-family: var(--main-font);
   font-size: 18px;
   font-weight: 400;
@@ -14,13 +14,21 @@
   inline-size: 50px;
   block-size: 20px;
   position: absolute;
-  top: 10px;
-  right: 10px;
+  inset-block-start: 10px;
+  inset-inline-end: 30px;
   font-size: 25px;
 }
 
 .header__logo::after {
-  content: "REC";
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  inset-block: 50%;
+  inline-size: 9px;
+  block-size: 9px;
+  margin-inline-start: 10px;
+  background-color: var(--accent-color);
+  box-shadow: 0 0 4px 4px var(--accent-color);
 }
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
