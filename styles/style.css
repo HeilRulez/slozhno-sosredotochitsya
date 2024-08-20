@@ -11,26 +11,49 @@
 }
 
 .header__logo {
-  inline-size: 50px;
-  block-size: 20px;
   position: absolute;
   inset-block-start: 10px;
-  inset-inline-end: 30px;
-  font-size: 25px;
+  inset-inline-end: 38px;
+  font-weight: 400;
+  line-height: 25px;
+  font-size: 1.125em;
 }
 
 .header__logo::after {
   content: "";
   position: absolute;
   border-radius: 50%;
-  inset-block: 50%;
+  inset-block-start: 9px;
+  inset-inline-end: -18px;
   inline-size: 9px;
   block-size: 9px;
   margin-inline-start: 10px;
   background-color: var(--accent-color);
-  box-shadow: 0 0 4px 4px var(--accent-color);
+  box-shadow: 0 0 4px 2px var(--accent-color);
 }
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
   background-color: var(--bg-color);
+}
+
+.decorated-zone::after {
+  content: "";
+  position: absolute;
+  inline-size: 25px;
+  block-size: 25px;
+  inset-inline-start: 10px;
+  inset-block-end: 10px;
+  border-bottom: 1px solid var(--accent-color);
+  border-left: 1px solid var(--accent-color);
+}
+
+.decorated-zone::before {
+  content: "";
+  position: absolute;
+  inline-size: 25px;
+  block-size: 25px;
+  inset-inline-end: 10px;
+  inset-block-start: 10px;
+  border-right: 1px solid var(--accent-color);
+  border-top: 1px solid var(--accent-color);
 }
