@@ -4,7 +4,9 @@
 */
 :root {
   --bg-color: oklch(12.51% 0.08662634250574062 264.0559517005978);
+  --title-decor-color: oklch(12.51% 0.08662634250574062 264.0559517005978);
   --accent-color: oklch(64.11% 0.2568555184439196 7.4525700712725955);
+  --title-main-color: oklch(64.87% 0.311 320.15);
   --main-font: "IBM Plex Mono", "Arial", sans-serif;
   --text-color: oklch(82.98% 0.081 350.65);
   --page-padding: 10px;
