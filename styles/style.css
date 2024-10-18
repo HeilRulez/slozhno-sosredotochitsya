@@ -3,6 +3,11 @@
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
   background-color: var(--bg-color);
+  background-image: url(../images/cover-image-dark.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .text-font-setup {
@@ -14,15 +19,16 @@
   letter-spacing: 0%;
   text-align: left;
 }
+
 .header {
   display: grid;
   block-size: 100vh;
   padding-block: var(--page-padding);
   padding-inline: var(--page-padding);
-  background-image: url(../images/cover-image-dark.png);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+}
+
+.header__theme-menu {
+  justify-self: end
 }
 
 .title {
@@ -94,7 +100,80 @@
   border-left: 1px solid var(--accent-color);
 }
 
+.header__theme-menu-item:not(:last-child) {
+  margin-block-end: 13px;
+}
+
+.header__theme-menu-button {
+  box-sizing: border-box;
+  color: var(--accent-color);
+  background-color: transparent;
+  border: 1px solid transparent;
+  padding-inline: 13px;
+  text-transform: lowercase;
+}
+
+.header__theme-menu-button_active {
+  border: 1px solid var(--accent-color);
+  pointer-events: none;
+}
+
+.header__theme-menu-button:hover {
+  cursor: pointer;
+  border: 1px solid var(--accent-color);
+}
+
+.header__theme-menu-button:focus {
+  outline: none;
+}
+
+.header__theme-menu-button:focus-visible {
+  outline: none;
+  border-bottom: 1px solid var(--accent-color);
+}
 
 p {
   color: var(--text-color);
+}
+
+.section-content {
+  padding-inline: var(--page-padding);
+}
+
+.content-link {
+  text-decoration: none;
+  text-shadow: 2px 3px 0 var(--accent-color);
+}
+
+.content-link:hover {
+  border-bottom: 1px solid currentColor;
+}
+
+.content-link:focus {
+  outline: none;
+}
+.content-link:focus-visible {
+  outline: none;
+  border: 1px solid currentColor;
+}
+
+.footer {
+  display: grid;
+  block-size: 100vh;
+  padding-block: var(--page-padding);
+  padding-inline: var(--page-padding);
+}
+
+.gallery {
+  display: grid;
+  gap: 10px;
+}
+
+.gallery-img {
+  inline-size: 100%;
+}
+
+.footer-title {
+  align-self: center;
+  justify-self: center;
 }
