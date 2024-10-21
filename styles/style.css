@@ -15,7 +15,7 @@
   font-family: var(--main-font);
   font-size: 1.125em;
   font-weight: 400;
-  line-height: 25px;
+  line-height: 23.4px;
   letter-spacing: 0%;
   text-align: left;
 }
@@ -25,6 +25,7 @@
   block-size: 100vh;
   padding-block: var(--page-padding);
   padding-inline: var(--page-padding);
+  margin-block-end: 50px;
 }
 
 .header__theme-menu {
@@ -41,7 +42,7 @@
   line-height: 82.5%;
   letter-spacing: 0%;
   text-align: left;
-  text-shadow: 4px 4px 0 var(--accent-color);
+  text-shadow: 2px 2px 0 var(--accent-color);
 }
 
 .text-font-title {
@@ -49,15 +50,15 @@
   color: var(--accent-color);
 }
 
+.text-font-title:not(.title-decor) {
+  margin-block-end: 20px;
+}
+
 .title-decor {
   inline-size: 100%;
   block-size: min-content;
   background-color: var(--accent-color);
   color: var(--title-decor-color);
-}
-
-.title_footer {
-  text-align: center;
 }
 
 .header__logo::before {
@@ -132,12 +133,15 @@
   border-bottom: 1px solid var(--accent-color);
 }
 
-p {
+.content {
   color: var(--text-color);
+  margin-block-start: var(--page-padding);
+  margin-block-end: 20px;
 }
 
 .section-content {
   padding-inline: var(--page-padding);
+  padding-block-end: 50px;
 }
 
 .content-link {
@@ -157,13 +161,6 @@ p {
   border: 1px solid currentColor;
 }
 
-.footer {
-  display: grid;
-  block-size: 100vh;
-  padding-block: var(--page-padding);
-  padding-inline: var(--page-padding);
-}
-
 .gallery {
   display: grid;
   gap: 10px;
@@ -171,6 +168,13 @@ p {
 
 .gallery-img {
   inline-size: 100%;
+}
+
+.footer {
+  display: grid;
+  block-size: 100vh;
+  padding-block: var(--page-padding);
+  padding-inline: var(--page-padding);
 }
 
 .footer-title {
