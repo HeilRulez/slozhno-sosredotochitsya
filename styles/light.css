@@ -1,38 +1,43 @@
-/*
-  Специально для светлой темы при наличии класса.
-  Здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
-
-:root.theme-light {
+:root .theme_light {
   --bg-color: oklch(97.08% 0.0169 349.48);
+  --bg-img: url(../images/cover-image-light.png);
   --accent-color: oklch(78.42% 0.1544 347.44);
   --title-main-color: oklch(87.93% 0.08316121088676925 342.75276791056524);
   --text-color: oklch(32.46% 0.0071 95.28);
-  /* Тень заголовка oklch(64.11% 0.2568555184439196 7.4525700712725955) */
+  --text-alt-color: oklch(32.46% 0.0071 95.28);
 }
 @media (prefers-color-scheme: light) {
   :root {
     --bg-color: oklch(97.08% 0.0169 349.48);
+    --bg-img: url(../images/cover-image-light.png);
     --accent-color: oklch(78.42% 0.1544 347.44);
     --title-main-color: oklch(87.93% 0.08316121088676925 342.75276791056524);
-    --text-color: oklch(32.46% 0.0071 95.28);    
-    }
+    --text-color: oklch(32.46% 0.0071 95.28);
+    --text-alt-color: oklch(32.46% 0.0071 95.28); 
   }
-  
-.page.theme_light {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
+      
+  .theme_auto .text-font-title {
+    color: var(--text-color);
+  }
+
+  .theme_auto .header__logo::before {
+    display: none;
+  }
+
+  .theme_auto .header__logo::after {
+    display: none;
+  }
+
 }
 
+.theme_light .text-font-title {
+  color: var(--text-color);
+}
 
-/* Остальные стили */
+.theme_light .header__logo::before {
+  display: none;
+}
 
-
-/* Остальные стили */ 
-
-
-/* Чтобы менять фоновое изображение в зависимости от темы,
-вам нужно будет использовать селекторы .theme-dark .page и theme-light .page. */
+.theme_light .header__logo::after {
+  display: none;
+}
