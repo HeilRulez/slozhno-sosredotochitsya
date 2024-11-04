@@ -13,9 +13,9 @@
     --accent-color: oklch(78.42% 0.1544 347.44);
     --title-main-color: oklch(87.93% 0.08316121088676925 342.75276791056524);
     --text-color: oklch(32.46% 0.0071 95.28);
-    --text-alt-color: oklch(32.46% 0.0071 95.28); 
+    --text-alt-color: oklch(32.46% 0.0071 95.28);
   }
-      
+
   .theme_auto .text-font-title {
     color: var(--text-color);
   }
@@ -27,7 +27,6 @@
   .theme_auto .header__logo::after {
     display: none;
   }
-
 }
 
 .theme_light .text-font-title {
