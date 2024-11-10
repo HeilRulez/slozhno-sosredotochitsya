@@ -16,15 +16,15 @@
     --text-alt-color: oklch(32.46% 0.0071 95.28);
   }
 
-  .theme_auto .text-font-title {
+  .text-font-title {
     color: var(--text-color);
   }
 
-  .theme_auto .header__logo::before {
+  .header__logo::before {
     display: none;
   }
 
-  .theme_auto .header__logo::after {
+  .header__logo::after {
     display: none;
   }
 }
