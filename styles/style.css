@@ -28,7 +28,7 @@
 }
 
 .decorated-zone {
-  min-height: 95vh;
+  min-height: 100vh;
 }
 
 .header__theme-menu {
@@ -44,10 +44,6 @@
   line-height: 82.5%;
   text-align: left;
   text-shadow: 4px 4px 0 var(--accent-color);
-}
-
-.header .title {
-  /* margin-block-end: 20px; */
 }
 
 .text-font-title {
@@ -231,7 +227,7 @@
   }
 
   .section-content:not(.section-content_gallery) {
-    grid-template-columns: 2fr 4fr;
+    grid-template-columns: 2fr 5fr;
   }
 
   .section-content_adaptive {
