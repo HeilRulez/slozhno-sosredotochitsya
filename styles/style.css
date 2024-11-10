@@ -12,7 +12,7 @@
 .text-font-setup {
   color: var(--text-color);
   font-family: var(--main-font);
-  font-size: 1.128em;
+  font-size: 1.134em;
   font-weight: 400;
   line-height: 23.4px;
   text-align: left;
@@ -20,16 +20,16 @@
 
 .header {
   display: grid;
-  grid-template-rows: 62px 140px 26px 248px;
+  grid-template-rows: 62px 140px 26px 248px 150px;
   position: relative;
   padding-block-start: var(--page-padding);
   padding-block-end: 46px;
   padding-inline: var(--page-padding);
-  min-height: 100vh;
+  min-height: 100%;
 }
 
 .decorated-zone {
-  /* min-height: 100vh; */
+  min-height: 100vh;
 }
 
 .header__theme-menu {
