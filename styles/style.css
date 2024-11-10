@@ -20,7 +20,7 @@
 
 .header {
   display: grid;
-  grid-template-rows: 62px 140px 26px 248px;
+  grid-template-rows: 62px 140px 26px 248px 248px;
   position: relative;
   padding-block-start: var(--page-padding);
   padding-block-end: 46px;
@@ -323,5 +323,9 @@
     position: absolute;
     inset-inline-end: 20px;
     inset-block-start: 20px;
+  }
+
+  .footer {
+    padding-block: 0;
   }
 }
