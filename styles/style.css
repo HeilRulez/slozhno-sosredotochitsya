@@ -139,6 +139,7 @@
 .content {
   color: var(--text-color);
   margin-block-start: 10px;
+  letter-spacing: .05rem;
 }
 
 .section-content {
@@ -183,7 +184,7 @@
 
 .footer {
   display: grid;
-  padding-block: var(--page-padding);
+  padding-block-end: var(--page-padding);
   padding-inline: var(--page-padding);
 }
 
@@ -325,7 +326,7 @@
     inset-block-start: 20px;
   }
 
-  .footer {
-    padding-block: 0;
+  .footer .decorated-zone {
+    min-height: 95vh;
   }
 }
