@@ -20,10 +20,10 @@
 
 .header {
   display: grid;
-  padding-block-start: var(--page-padding);
-  padding-block-end: 50px;
+  position: relative;
+  padding-block: var(--page-padding);
   padding-inline: var(--page-padding);
-  margin-block-end: 4px;
+  margin-block-end: 54px;
   min-height: 100vh;
 }
 
@@ -182,7 +182,7 @@
 
 .footer {
   display: grid;
-  padding-block-end: var(--page-padding);
+  padding-block: var(--page-padding);
   padding-inline: var(--page-padding);
   min-height: 100vh;
 }
