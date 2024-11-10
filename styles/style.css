@@ -139,7 +139,6 @@
 .content {
   color: var(--text-color);
   margin-block-start: 10px;
-  letter-spacing: .05rem;
 }
 
 .section-content {
