@@ -20,6 +20,10 @@
     color: var(--text-color);
   }
 
+  .header__logo {
+    display: none;
+  }
+
   .header__logo::before {
     display: none;
   }
@@ -31,6 +35,10 @@
 
 .theme_light .text-font-title {
   color: var(--text-color);
+}
+
+.theme_light .header__logo {
+  display: none;
 }
 
 .theme_light .header__logo::before {
